@@ -17,4 +17,10 @@ Notes:
 
 def last(a, n):
     # Your code here
+    if n > len(arr):
+        return 'invalid'
+    elif n == 0: # this is actually a valid index though
+        return []
 
+    # main solution
+    return arr[ len(arr)-n : ]
